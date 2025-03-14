@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
 import dotenv from 'dotenv'
 
+
 export default defineConfig(async ({ mode }) => {
     let proxy = undefined
     if (mode === 'development') {
@@ -48,4 +49,4 @@ export default defineConfig(async ({ mode }) => {
             host: process.env.VITE_HOST
         }
     }
-})
+});
